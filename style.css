@@ -1,0 +1,362 @@
+body{
+	margin:0;
+	padding:0;
+	font-size: 1,5em;
+  	font-family: "PT Sans Narrow", sans-serif;
+  	font-weight: 700;
+
+	background: black url(images/index-background.png) no-repeat 50% 0;
+}
+header,footer, section, nav{
+	display: block;
+}
+header{
+	height: 72px;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+h1 {
+	text-transform: uppercase;
+	color: white;
+  	font-size: 29px;
+  	line-height: 42px;
+  	word-spacing: 6px;
+  	padding: 0;
+}
+h2 {
+	color: black;
+  	font-size: 29px;
+  	line-height: 42px;
+  	word-spacing: 6px;
+  	padding: 0;
+}
+
+#content p{color: black;}
+p{color: white;}
+
+				/*TOP*/
+
+.menu-all{
+	margin:0 auto;
+	width: 90%;
+	height: 71px;
+}
+.top{
+	background: black;
+}
+
+				/*left menu*/
+
+.menu{
+	max-width: 750px;
+	float: left;
+}
+.menu ul{
+	display: table-row;
+}
+.menu ul li{
+	display: table-cell;
+	width: auto;
+	height: 71px;
+	text-align: center;
+	list-style-type: none;
+}
+.menu ul li a{
+	height: 71px; 
+	text-align: center;
+	display: table-cell;
+	width: 750px;
+	vertical-align: middle;
+}
+.menu li:last-child{
+	display: none;
+}
+
+
+				/*right menu*/
+
+.menu-enter{
+	float: right;
+	max-width: 200px;
+}
+.menu-enter ul{
+	display: table-row;
+}
+.menu-enter ul li{
+	display: table-cell;
+	width: auto;
+	height: 71px;
+	text-align: center;
+	list-style-type: none;
+}
+.menu-enter ul li a{
+	height: 71px; 
+	text-align: center;
+	display: table-cell;
+	width: 100px;
+	vertical-align: middle;
+}
+
+.menu a:hover{
+	background: grey;
+}
+.menu-enter a:hover{
+	background: grey;
+}
+			/*MID*/	
+.container{
+	width: 90%;
+	margin:0 auto;
+}
+.logo{
+	margin: 20px;
+	text-align: center;
+}
+#col{
+	padding: 20px;
+	text-align: center;
+}
+#col-row{
+	width:33%;
+	float:left;
+}
+.row{
+	clear: both;
+}
+.footer:before,
+.footer:after,
+.row:before,
+.row:after,
+#section:before,
+#section:after{
+	content:" ";
+	display: table;
+}
+#section:after,
+.row:after{
+	clear: both;
+}
+#section{
+	margin:0 auto;
+	margin-top:50px;
+	width: 100%;
+	height: 432px;
+	background: 
+	url(http://ahaulin.ru/barbershop/images/separator.png) no-repeat 50%,
+	url(http://ahaulin.ru/barbershop/images/sectionBg.png);
+}
+#inner-left{
+	width:40%;
+	height:300px; 
+	float:left;
+	margin-top: 60px;
+	margin-left: 30px;
+	overflow: scroll;
+}
+
+#content p {
+  margin: 5px 0;
+  list-style: none;
+  line-height: 24px;
+}
+
+#content a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 0,8em;
+  font-weight: bold;
+}
+
+.news-btn {
+	width: 10%;
+	position: absolute;
+}
+
+.date {
+  display: block;
+  font: italic 14px Georgia;
+  text-transform: lowercase;
+  margin-bottom: 25px;
+}
+#inner-right{
+	width:40%;
+	height:300px; 
+	float:right;
+	margin-top: 60px;
+	margin-right: 30px;
+	
+}
+#title{
+	text-align: center;
+	color: #000000;
+  	font-size: 30px;
+  	font-weight: bold;
+  	text-transform: uppercase;
+  	margin-bottom: 25px;
+}
+#content{
+	  text-align: left;
+}
+.slider{
+	width:99%;
+	height: 199px;
+	position: relative;
+	overflow: hidden;
+}
+.slides{
+	position: relative;
+	transition: 1s;
+}
+.slide{
+	float: left;
+	display: block;
+}
+.slide img{
+}
+.prev{
+	position: absolute;
+	top:100px;
+	left: 0;
+	z-index: 1;
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+	background: white;
+}
+.next{
+	position: absolute;
+	right: 0;
+	top:100px;
+	z-index: 1;
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+	background: white;
+}
+
+
+
+
+
+
+
+
+.footer{
+	margin-top: 50px;
+	background: url(images/footer.png);
+}
+.footer-center{
+	text-align: center;
+	padding: 50px;
+
+}
+
+@media screen and (max-width: 950px){
+	.menu-enter{
+		display: none;
+	}
+	.menu li:last-child{
+		display: block;
+	}
+}
+@media screen and (max-width: 600px){
+	#section{
+		background:url(http://ahaulin.ru/barbershop/images/sectionBg.png);
+		height: 750px;
+	}
+	#content{
+		margin:0 auto;
+	}
+	#inner-left{
+		width: 90%;
+	}
+	#inner-right{
+		width: 90%;
+	}
+	#col-row{
+		width:100%;
+	}
+
+}
+@media screen and (max-width: 600px){
+	.menu-all{
+		display: none;
+	}
+.btn-menu {
+  color: #fff;
+  background-color: black;
+  padding: 5px;
+  position: absolute;
+  top: 20px;
+  left: 5px;
+  cursor: pointer;
+  transition: left .23s;
+  z-index: 3;
+  width: 25px;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+.btn-menu:hover{
+	background: grey;
+}
+.btn-menu span {
+  display: block;
+  height: 5px;
+  background-color: #fff;
+  margin: 5px 0 0;
+  transition: all .1s linear .23s;
+  position: relative;
+}
+.btn-menu span.first {
+  margin-top: 0;
+}
+.hidden-menu {
+
+  display: block;
+  position: fixed;
+  list-style:none;
+  padding: 10px;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  background: grey;
+  opacity: 0.6;
+  height: 100%;
+  top: 71px;
+  left: -100%;
+  transition: left .2s;
+  z-index: 2;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+}
+
+
+
+/* burger */
+.hidden-menu{
+	position: fixed;
+	left: -100%;
+}
+.hidden-menu-ticker {
+  display: none;
+}
+
+
+.hidden-menu-ticker:checked ~ .hidden-menu {
+  left: 0;
+}
+.hidden-menu-ticker:checked ~ .btn-menu span.first {
+  -webkit-transform: rotate(45deg);
+  top: 10px;
+}
+.hidden-menu-ticker:checked ~ .btn-menu span.second {
+  opacity: 0;
+}
+.hidden-menu-ticker:checked ~ .btn-menu span.third {
+  -webkit-transform: rotate(-45deg);
+  top: -10px;
+}
